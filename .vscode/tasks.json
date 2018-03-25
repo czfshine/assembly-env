@@ -1,0 +1,20 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "run in DosBox with Debug",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "isBackground": true,
+            "windows": {
+                "command": "copy ${file} C:\\workplace\\assembly-env\\cache\\HELLO.ASM  && C: && cd C:\\workplace\\assembly-env\\DOSBox && .\\DosBox.exe",
+            }
+
+        }
+    ]
+}
