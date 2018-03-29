@@ -8,11 +8,24 @@
             "type": "shell",
             "group": {
                 "kind": "build",
-                "isDefault": true
+                "isDefault": false
             },
             "isBackground": true,
             "windows": {
                 "command": "copy ${file} C:\\workplace\\assembly-env\\cache\\HELLO.ASM  && C: && cd C:\\workplace\\assembly-env\\DOSBox && .\\DosBox.exe",
+            }
+
+        },
+        {
+            "label": "copy to dosbox",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "isBackground": true,
+            "windows": {
+                "command": "copy ${file} C:\\workplace\\assembly-env\\cache\\HELLO.ASM ",
             }
 
         }
